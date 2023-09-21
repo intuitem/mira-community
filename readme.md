@@ -70,11 +70,12 @@ python manage.py collectstatic
 python manage.py createsuperuser
 ```
 
-5. Run [MIRA](http://127.0.0.1:8000/)
+5. Run MIRA
 
 ```sh
 python manage.py runserver
 ```
+You can then reach MIRA using your web brower at [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 #### Using Docker
 
@@ -86,11 +87,14 @@ python manage.py runserver
 docker build . -t mira:3.0.2
 ```
 
-3. Once this is done, you can simply start-up [MIRA](http://127.0.0.1:8000/) by running:
+3. Once this is done, you can simply start-up MIRA by running:
 
 ```sh
 docker run --rm -it --env CREATE_SUPERUSER -p 8000:8000 -v ./db:/code/db  mira:3.0.2
 ```
+When asked for, enter your email and password for your superuser.
+
+You can then reach MIRA using your web brower at [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 For the following executions, simply run:
 
