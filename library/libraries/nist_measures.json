@@ -1,0 +1,981 @@
+{
+      "locale": "en",
+      "name": "NIST CSF 1.1 - Security functions",
+      "description": "Security functions inspired from NIST CSF 1.1",
+      "format_version": "1.0",
+      "Copyright": "https://www.nist.gov/open/license",
+      "objects": [
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.AM-1",
+                        "description": "Physical devices and systems within the organization are inventoried.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.AM-2",
+                        "description": "Software platforms and applications within the organization are inventoried.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.AM-3",
+                        "description": "Organizational communication and data flows are mapped.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.AM-4",
+                        "description": "External information systems are catalogued.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.AM-5",
+                        "description": "Resources (e.g., hardware, devices, data, time, personnel, and software) are prioritized based on their classification, criticality, and business value.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.AM-6",
+                        "description": "Cybersecurity roles and responsibilities for the entire workforce and third-party stakeholders (e.g., suppliers, customers, partners) are established.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.BE-1",
+                        "description": "The organization\u2019s role in the supply chain is identified and communicated.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.BE-2",
+                        "description": "The organization\u2019s place in critical infrastructure and its industry sector is identified and communicated.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.BE-3",
+                        "description": "Priorities for organizational mission, objectives, and activities are established and communicated.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.BE-4",
+                        "description": "Dependencies and critical functions for delivery of critical services are established.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.BE-5",
+                        "description": "Resilience requirements to support delivery of critical services are established for all operating states (e.g. under duress/attack, during recovery, normal operations).",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.GV-1",
+                        "description": "Organizational cybersecurity policy is established and communicated.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.GV-2",
+                        "description": "Cybersecurity roles and responsibilities are coordinated and aligned with internal roles and external partners.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.GV-3",
+                        "description": "Legal and regulatory requirements regarding cybersecurity, including privacy and civil liberties obligations, are understood and managed.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.GV-4",
+                        "description": "Governance and risk management processes address cybersecurity risks.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.RA-1",
+                        "description": "Asset vulnerabilities are identified and documented.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.RA-2",
+                        "description": "Cyber threat intelligence is received from information sharing forums and sources.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.RA-3",
+                        "description": "Threats, both internal and external, are identified and documented.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.RA-4",
+                        "description": "Potential business impacts and likelihoods are identified.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.RA-5",
+                        "description": "Threats, vulnerabilities, likelihoods, and impacts are used to determine risk.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.RA-6",
+                        "description": "Risk responses are identified and prioritized.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.RM-1",
+                        "description": "Risk management processes are established, managed, and agreed to by organizational stakeholders.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.RM-2",
+                        "description": "Organizational risk tolerance is determined and clearly expressed.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.RM-3",
+                        "description": "The organization\u2019s determination of risk tolerance is informed by its role in critical infrastructure and sector specific risk analysis.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.SC-1",
+                        "description": "Cyber supply chain risk management processes are identified, established, assessed, managed, and agreed to by organizational stakeholders.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.SC-2",
+                        "description": "Suppliers and third party partners of information systems, components, and services are identified, prioritized, and assessed using a cyber supply chain risk assessment process.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.SC-3",
+                        "description": "Contracts with suppliers and third-party partners are used to implement appropriate measures designed to meet the objectives of an organization\u2019s cybersecurity program and Cyber Supply Chain Risk Management Plan.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.SC-4",
+                        "description": "Suppliers and third-party partners are routinely assessed using audits, test results, or other forms of evaluations to confirm they are meeting their contractual obligations.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "ID.SC-5",
+                        "description": "Response and recovery planning and testing are conducted with suppliers and third-party providers.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.AC-1",
+                        "description": "Identities and credentials are issued, managed, verified, revoked, and audited for authorized devices, users and processes.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.AC-2",
+                        "description": "Physical access to assets is managed and protected.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.AC-3",
+                        "description": "Remote access is managed.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.AC-4",
+                        "description": "Access permissions and authorizations are managed, incorporating the principles of least privilege and separation of duties.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.AC-5",
+                        "description": "Network integrity is protected (e.g., network segregation, network segmentation).",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.AC-6",
+                        "description": "Identities are proofed and bound to credentials and asserted in interactions.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.AC-7",
+                        "description": "Users, devices, and other assets are authenticated (e.g., single-factor, multi-factor) commensurate with the risk of the transaction (e.g., individuals\u2019 security and privacy risks and other organizational risks).",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.AT-1",
+                        "description": "All users are informed and trained.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.AT-2",
+                        "description": "Privileged users understand their roles and responsibilities.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.AT-3",
+                        "description": "Third-party stakeholders (e.g., suppliers, customers, partners) understand their roles and responsibilities.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.AT-4",
+                        "description": "Senior executives understand their roles and responsibilities.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.AT-5",
+                        "description": "Physical and cybersecurity personnel understand their roles and responsibilities.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.DS-1",
+                        "description": "Data-at-rest is protected.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.DS-2",
+                        "description": "Data-in-transit is protected.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.DS-3",
+                        "description": "Assets are formally managed throughout removal, transfers, and disposition.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.DS-4",
+                        "description": "Adequate capacity to ensure availability is maintained.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.DS-5",
+                        "description": "Protections against data leaks are implemented.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.DS-6",
+                        "description": "Integrity checking mechanisms are used to verify software, firmware, and information integrity.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.DS-7",
+                        "description": "The development and testing environment(s) are separate from the production environment.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.DS-8",
+                        "description": "Integrity checking mechanisms are used to verify hardware integrity.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.IP-1",
+                        "description": "A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality).",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.IP-2",
+                        "description": "A System Development Life Cycle to manage systems is implemented.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.IP-3",
+                        "description": "Configuration change control processes are in place.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.IP-4",
+                        "description": "Backups of information are conducted, maintained, and tested.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.IP-5",
+                        "description": "Policy and regulations regarding the physical operating environment for organizational assets are met.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.IP-6",
+                        "description": "Data is destroyed according to policy.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.IP-7",
+                        "description": "Protection processes are improved.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.IP-8",
+                        "description": "Effectiveness of protection technologies is shared.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.IP-9",
+                        "description": "Response plans (Incident Response and Business Continuity) and recovery plans (Incident Recovery and Disaster Recovery) are in place and managed.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.IP-10",
+                        "description": "Response and recovery plans are tested.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.IP-11",
+                        "description": "Cybersecurity is included in human resources practices (e.g., deprovisioning, personnel screening).",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.IP-12",
+                        "description": "A vulnerability management plan is developed and implemented.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.MA-1",
+                        "description": "Maintenance and repair of organizational assets are performed and logged, with approved and controlled tools.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.MA-2",
+                        "description": "Remote maintenance of organizational assets is approved, logged, and performed in a manner that prevents unauthorized access.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.PT-1",
+                        "description": "Audit/log records are determined, documented, implemented, and reviewed in accordance with policy.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.PT-2",
+                        "description": "Removable media is protected and its use restricted according to policy.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.PT-3",
+                        "description": "The principle of least functionality is incorporated by configuring systems to provide only essential capabilities.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.PT-4",
+                        "description": "Communications and control networks are protected.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "PR.PT-5",
+                        "description": "Mechanisms (e.g., failsafe, load balancing, hot swap) are implemented to achieve resilience requirements in normal and adverse situations.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "DE.AE-1",
+                        "description": "A baseline of network operations and expected data flows for users and systems is established and managed.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "DE.AE-2",
+                        "description": "Detected events are analyzed to understand attack targets and methods.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "DE.AE-3",
+                        "description": "Event data are collected and correlated from multiple sources and sensors.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "DE.AE-4",
+                        "description": "Impact of events is determined.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "DE.AE-5",
+                        "description": "Incident alert thresholds are established.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "DE.CM-1",
+                        "description": "The network is monitored to detect potential cybersecurity events.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "DE.CM-2",
+                        "description": "The physical environment is monitored to detect potential cybersecurity events.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "DE.CM-3",
+                        "description": "Personnel activity is monitored to detect potential cybersecurity events.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "DE.CM-4",
+                        "description": "Malicious code is detected.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "DE.CM-5",
+                        "description": "Unauthorized mobile code is detected.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "DE.CM-6",
+                        "description": "External service provider activity is monitored to detect potential cybersecurity events.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "DE.CM-7",
+                        "description": "Monitoring for unauthorized personnel, connections, devices, and software is performed.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "DE.CM-8",
+                        "description": "Vulnerability scans are performed.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "DE.DP-1",
+                        "description": "Roles and responsibilities for detection are well defined to ensure accountability.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "DE.DP-2",
+                        "description": "Detection activities comply with all applicable requirements.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "DE.DP-3",
+                        "description": "Detection processes are tested.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "DE.DP-4",
+                        "description": "Event detection information is communicated.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "DE.DP-5",
+                        "description": "Detection processes are continuously improved.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "RS.RP-1",
+                        "description": "Response plan is executed during or after an incident.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "RS.CO-1",
+                        "description": "Personnel know their roles and order of operations when a response is needed.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "RS.CO-2",
+                        "description": "Incidents are reported consistent with established criteria.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "RS.CO-3",
+                        "description": "Information is shared consistent with response plans.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "RS.CO-4",
+                        "description": "Coordination with stakeholders occurs consistent with response plans.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "RS.CO-5",
+                        "description": "Voluntary information sharing occurs with external stakeholders to achieve broader cybersecurity situational awareness.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "RS.AN-1",
+                        "description": "Notifications from detection systems are investigated.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "RS.AN-2",
+                        "description": "The impact of the incident is understood.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "RS.AN-3",
+                        "description": "Forensics are performed.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "RS.AN-4",
+                        "description": "Incidents are categorized consistent with response plans.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "RS.AN-5",
+                        "description": "Processes are established to receive, analyze and respond to vulnerabilities disclosed to the organization from internal and external sources (e.g. internal testing, security bulletins, or security researchers)",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "RS.MI-1",
+                        "description": "Incidents are contained.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "RS.MI-2",
+                        "description": "Incidents are mitigated.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "RS.MI-3",
+                        "description": "Newly identified vulnerabilities are mitigated or documented as accepted risks.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "RS.IM-1",
+                        "description": "Response plans incorporate lessons learned.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "RS.IM-2",
+                        "description": "Response strategies are updated.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "RC.RP-1",
+                        "description": "Recovery plan is executed during or after a cybersecurity incident.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "RC.IM-1",
+                        "description": "Recovery plans incorporate lessons learned.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "RC.IM-2",
+                        "description": "Recovery strategies are updated.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "RC.CO-1",
+                        "description": "Public relations are managed.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "RC.CO-2",
+                        "description": "Reputation is repaired after an incident.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            },
+            {
+                  "type": "security_function",
+                  "fields": {
+                        "name": "RC.CO-3",
+                        "description": "Recovery activities are communicated to internal and external stakeholders as well as executive and management teams.",
+                        "provider": "NIST CSF",
+                        "contact": ""
+                  }
+            }
+      ]
+}

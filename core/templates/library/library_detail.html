@@ -1,0 +1,78 @@
+{% extends 'core/base.html' %}
+
+{% load i18n static %}
+
+{% block content %}
+
+<div>
+    {% with page_title=library.name %}
+    {% include 'snippets/breadcrumbs.html' %}
+    {% endwith %}
+    <div class="relative overflow-x-auto overflow-y-auto shadow-md rounded-lg bg-white">
+        <div class="py-5 px-6 flex flex-col space-y-2">
+            <div class="flex justify-between w-full shadow border rounded p-4">
+                <p class="mt-1 text-sm leading-5 text-gray-500">
+                    {{ library.description|linebreaksbr }}
+                </p>
+                {% if can_import %}
+                <span x-data="{ open: false }">
+                    <a title="Import" @click="open = !open, modalOpen = !modalOpen" class="table-action cursor-pointer"><i class="fas fa-file-import"></i></a>
+                    {% include "snippets/modal/modal.html" with modal_action="import_library" header=_("Import library") library=library.name %}
+                </span>
+                {% endif %}
+            </div>
+            <div class="bg-white shadow border rounded border-gray-100 text-left p-4 text-sm font-normal text-gray-5">
+                <p>{{ library.copyright |linebreaksbr }}</p>
+            </div>
+            <div class="flex flex-col space-y-4">
+                {% for type in types %}
+                <div class="bg-white shadow border border-gray-100 text-left p-4 font-semibold rounded">
+                    <h2>{% trans "Objects of type:" %} {{ type|upper }}</h2>
+                    {% if type == "matrix" %}
+                        {% for matrix in matrices %}
+                            <p class="font-normal">{% trans "Name" %}: {{ matrix.name }}</p>
+                            <p class="font-normal">{% trans "Description" %}: {{ matrix.description }}</p>
+                            {% include 'snippets/risk_matrix.html'%}
+                        {% endfor %}
+                    {% endif %}
+                    <table class="w-full text-sm text-left text-gray-500">
+                        {% if type == "threat" %}
+                            <tr class="text-xs text-gray-700 uppercase bg-gray-50">
+                                <th class="px-6 py-3">{% trans "Threat name" %}</th>
+                                <th class="px-6 py-3">{% trans "Description" %}</th>
+                                <th class="px-6 py-3">{% trans "Provider" %}</th>
+                            </tr>
+                            {% for object in library.objects %}
+                                {% if object.type == type %}
+                                    <tr>
+                                        <td class="px-6 py-3 font-medium text-gray-7">{{ object.fields.name }}</td>
+                                        <td class="px-6 py-3">{{ object.fields.description|linebreaksbr }}</td>
+                                        <td class="px-6 py-3">{{ object.fields.provider }}</td>
+                                    </tr>
+                                {% endif %}
+                            {% endfor %}
+                        {% elif type == "security_function" %}
+                        <tr class="text-xs text-gray-700 uppercase bg-gray-50">
+                            <th class="px-6 py-3">{% trans "Security function name" %}</th>
+                            <th class="px-6 py-3">{% trans "Description" %}</th>
+                            <th class="px-6 py-3">{% trans "Provider" %}</th>
+                        </tr>
+                        {% for object in library.objects %}
+                            {% if object.type == type %}
+                                <tr class="even:bg-white odd:bg-gray-50">
+                                    <td class="px-6 py-3 font-medium text-gray-7">{{ object.fields.name }}</td>
+                                    <td class="px-6 py-3">{{ object.fields.description|linebreaksbr }}</td>
+                                    <td class="px-6 py-3">{{ object.fields.provider }}</td>
+                                </tr>
+                            {% endif %}
+                        {% endfor %}
+                        {% endif %}
+                    </table>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
