@@ -19,7 +19,7 @@ python manage.py collectstatic --noinput
 python manage.py migrate
 python manage.py makemessages -i venv -l fr
 python manage.py compilemessages -i venv -l fr
-if [ -z "$CREATE_SUPERUSER" ]; then
+if [ ! -z ${CREATE_SUPERUSER+x} ]; then
     python manage.py createsuperuser
 fi
 
