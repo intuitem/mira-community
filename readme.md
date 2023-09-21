@@ -257,4 +257,4 @@ Great care has been taken to follow security best practices. Please report any i
 
 ## License
 
-[GPLv3](https://www.gnu.org/licenses/gpl-3.0.fr.html)
+[AGPLv3](https://choosealicense.com/licenses/agpl-3.0/)
