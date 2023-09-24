@@ -161,7 +161,7 @@ export EMAIL_USE_TLS_RESCUE=True
 # Idle session timeout management
 export SESSION_COOKIE_AGE=900 # in seconds, (default 900, i.e. 15 minutes)
 export SESSION_EXPIRE_AT_BROWSER_CLOSE=True # (default True)
-export SESSION_SAVE_EVERY_REQUEST=True # (default Trye)
+export SESSION_SAVE_EVERY_REQUEST=True # (default True)
 ```
 
 3. Choose the tool of your choice, either python-venv or virtualenv. For example:
