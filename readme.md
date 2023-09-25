@@ -102,7 +102,7 @@ docker build . -t mira:3.0.2
 3. Once this is done, you can simply start-up MIRA by running:
 
 ```sh
-docker run --rm -it --env CREATE_SUPERUSER -p 8000:8000 -v ./db:/code/db  mira:3.0.2
+docker run --rm -it --env CREATE_SUPERUSER=true -p 8000:8000 -v ./db:/code/db  mira:3.0.2
 ```
 When asked for, enter your email and password for your superuser.
 
