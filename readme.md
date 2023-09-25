@@ -3,7 +3,17 @@
 
 MIRA is your streamlined one-stop shop for risk assessment and management. What makes it special is the fact that it is based on field knowledge and inputs from security experts.
 
+## Overview
+
+![mira overview](mira_overview.png)
+
+## Community
+
+Join our [open Discord community](https://discord.gg/7ubENCPF) to interact with the team and other GRC experts.
+
 ## Installation
+
+> The fastest and easiest way to get started is through the [free trial of cloud instance available here](https://intuitem.com/trial).
 
 This part is divided in two sections, the quick start if you simply want to run MIRA to see what it's made of, and the development setup if you want to go further.
 
@@ -18,7 +28,7 @@ To install gettext and pango, do `sudo apt update && sudo apt install gettext li
 
 ### Quick start 🏁
 
-There are two methods to run MIRA in a quick way, using Python or using Docker.
+There are two methods to run MIRA locally: using Python or using Docker.
 
 By default, Django secret key is generated randomly at each start of Mira. This is convenient for quick test, but not recommended for production, as it can break the sessions (see this [topic](https://stackoverflow.com/questions/15170637/effects-of-changing-djangos-secret-key) for more information). To set a fixed secret key, use the environment variable DJANGO_SECRET_KEY.
 
