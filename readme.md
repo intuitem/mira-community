@@ -38,7 +38,7 @@ By default, Django secret key is generated randomly at each start of Mira. This 
 
 ```sh
 git clone git@github.com:intuitem/mira-community.git
-cd mira
+cd mira-community
 ```
 
 #### Using Python
@@ -122,7 +122,7 @@ docker run --rm -p 8000:8000 -v ./db:/code/db  mira:3.0.2
 
 ```sh
 git clone git@github.com:intuitem/mira-community.git
-cd mira
+cd mira-community
 ```
 
 2. Create a file in the parent folder (e.g. ../myvars) and store your environment variables within it by copying and modifying the following code and replace `"<XXX>"` by your private values. Take car not to commit this file in your git repo.
