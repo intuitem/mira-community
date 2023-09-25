@@ -37,7 +37,7 @@ By default, Django secret key is generated randomly at each start of Mira. This 
 0. Clone the repository
 
 ```sh
-git clone git@github.com:intuitem/mira.git
+git clone git@github.com:intuitem/mira-community.git
 cd mira
 ```
 
@@ -121,7 +121,7 @@ docker run --rm -p 8000:8000 -v ./db:/code/db  mira:3.0.2
 1. Clone the repository.
 
 ```sh
-git clone git@github.com:intuitem/mira.git
+git clone git@github.com:intuitem/mira-community.git
 cd mira
 ```
 
