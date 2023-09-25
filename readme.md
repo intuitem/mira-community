@@ -3,6 +3,8 @@
 
 MIRA is your streamlined one-stop shop for risk assessment and management. What makes it special is the fact that it is based on field knowledge and inputs from security experts.
 
+Read the [full article](https://intuitem.com/blog/we-are-going-open-source/) about the community editions on our blog.
+
 ## Overview
 
 ![mira overview](mira_overview.png)
