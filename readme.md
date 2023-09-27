@@ -242,7 +242,7 @@ python manage.py compilemessages -i venv -l fr
 python manage.py runserver
 ```
 
-🆘 *HELP*: If you have the error `"unsupported locale setting"` when loading the `[/calendar/](http://127.0.0.1:8000/calendar/)` page, run:
+🆘 *HELP*: If you have the error `"unsupported locale setting"` when loading the '[/calendar/](http://127.0.0.1:8000/calendar/)' page, run:
 
 ```sh
 export LC_ALL="fr_FR.UTF-8" & export LC_CTYPE="fr_FR.UTF-8" & sudo dpkg-reconfigure locales
