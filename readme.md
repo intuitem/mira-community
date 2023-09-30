@@ -11,7 +11,7 @@ Read the [full article](https://intuitem.com/blog/we-are-going-open-source/) abo
 
 ## Community
 
-Join our [open Discord community](https://discord.gg/7ubENCPF) to interact with the team and other GRC experts.
+Join our [open Discord community](https://discord.gg/qvkaMdQ8da) to interact with the team and other GRC experts.
 
 ## Installation
 
