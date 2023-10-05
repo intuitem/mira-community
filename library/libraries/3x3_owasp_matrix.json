@@ -1,0 +1,37 @@
+{
+    "locale": "en",
+    "name": "OWASP basic matrix 3x3",
+    "description": "OWASP basic matrix 3x3",
+    "format_version": "1.0",
+    "objects": [
+        {
+            "type": "matrix",
+            "fields": {
+                "name": "owasp",
+                "description": "owasp matrix",
+                "probability" : [
+                    {"abbreviation": "L", "name": "Low", "description": "rare"},
+                    {"abbreviation": "M", "name": "Medium", "description": "occasional"},
+                    {"abbreviation": "H", "name": "High", "description": "frequent"}
+                ],
+                "impact": [
+                    {"abbreviation": "L", "name": "Low", "description": "minimal"},
+                    {"abbreviation": "M", "name": "Medium", "description": "moderate"},
+                    {"abbreviation": "H", "name": "High", "description": "severe"}
+                ],
+                "risk": [
+                    {"abbreviation": "N", "name": "Note", "description": "Note", "hexcolor": "#A6EC99"},
+                    {"abbreviation": "L", "name": "Low", "description": "Low", "hexcolor": "#FFFF54"},
+                    {"abbreviation": "M", "name": "Medium", "description": "Medium", "hexcolor": "#F2A93B"},
+                    {"abbreviation": "H", "name": "High", "description": "High", "hexcolor": "#F5C2CB"},
+                    {"abbreviation": "C", "name": "Critical", "description": "Critical", "hexcolor": "#EA3323"}
+                ],
+                "grid": [
+                    [0, 1, 2],
+                    [1, 2, 3],
+                    [2, 3, 4]
+                ]
+            }
+        }
+    ]
+}
