@@ -32,7 +32,7 @@ To install gettext and pango, do `sudo apt update && sudo apt install gettext li
 
 There are two methods to run MIRA locally: using Python or using Docker.
 
-By default, Django secret key is generated randomly at each start of Mira. This is convenient for quick test, but not recommended for production, as it can break the sessions (see this [topic](https://stackoverflow.com/questions/15170637/effects-of-changing-djangos-secret-key) for more information). To set a fixed secret key, use the environment variable DJANGO_SECRET_KEY.
+By default, Django secret key is generated randomly at each start of Mira. This is convenient for quick test, but not recommended for production, as it can break the sessions (see this [topic](https://stackoverflow.com/questions/15170637/effects-of-changing-djangos-secret-key) for more information). To set a fixed secret key, use the environment variable `DJANGO_SECRET_KEY`.
 
 0. Clone the repository
 
@@ -125,7 +125,7 @@ git clone git@github.com:intuitem/mira-community.git
 cd mira-community
 ```
 
-2. Create a file in the parent folder (e.g. ../myvars) and store your environment variables within it by copying and modifying the following code and replace `"<XXX>"` by your private values. Take car not to commit this file in your git repo.
+2. Create a file in the parent folder (e.g. `../myvars`) and store your environment variables within it by copying and modifying the following code and replace `"<XXX>"` by your private values. Take car not to commit this file in your git repo.
 
 **Recommended variables**
 
@@ -147,7 +147,7 @@ export EMAIL_HOST=localhost
 export EMAIL_PORT=1025
 
 ```
-> As said in the quickstart section, MIRA generates a random Django secret key if not specified. To avoid broken sessions, it is preferable to set a fixed random value using the DJANGO_SECRET_KEY environment variable.
+> As said in the quickstart section, MIRA generates a random Django secret key if not specified. To avoid broken sessions, it is preferable to set a fixed random value using the `DJANGO_SECRET_KEY` environment variable.
 
 **Optional variables**
 
@@ -216,7 +216,7 @@ python manage.py migrate
 
 7. Create a superuser, that will be MIRA administrator.
 
-> If you have set a mailer and MIRA_SUPERUSER_EMAIL variables, there's no need to create a Django superuser with createsuperuser, as it will be created automatically on first start. You should receive an email with a link to setup your password.
+> If you have set a mailer and `MIRA_SUPERUSER_EMAIL` variables, there's no need to create a Django superuser with `createsuperuser`, as it will be created automatically on first start. You should receive an email with a link to setup your password.
 
 ```sh
 python manage.py createsuperuser
