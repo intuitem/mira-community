@@ -209,13 +209,11 @@ class RiskAnalysisUpdateForm(StyledModelForm):
 
 
 class SecurityMeasureCreateForm(LinkCleanMixin, StyledModelForm):
-    folder = forms.ModelChoiceField(queryset=Folder.objects.none())
+    folder = forms.ModelChoiceField(queryset=Folder.objects.filter(content_type=Folder.ContentType.DOMAIN))
     def __init__(self, user=None, *args, **kwargs):
         super().__init__(*args, **kwargs)
         if user:
             self.fields['folder'].queryset = Folder.objects.filter(id__in=RoleAssignment.get_accessible_folders(Folder.get_root_folder(), user, Folder.ContentType.DOMAIN, codename="add_securitymeasure"))
-        else:
-            self.fields['folder'].queryset = Folder.objects.none()
         self.fields['folder'].widget = SearchableSelect(attrs={'class': 'text-sm rounded',
                    'searchbar_class': '[&_.search-icon]:text-gray-500 text-sm px-3',
                    'wrapper_class': 'border border-gray-300 bg-gray-50 text-gray-900 text-sm rounded-b-lg focus:ring-blue-500 focus:border-blue-500 max-h-56 overflow-y-scroll'},
@@ -390,17 +388,15 @@ class RiskAcceptanceCreateUpdateForm(StyledModelForm):
 
 
 class ProjectForm(StyledModelForm):
-    folder = forms.ModelChoiceField(queryset=Folder.objects.none())
+    folder = forms.ModelChoiceField(queryset=Folder.objects.filter(content_type=Folder.ContentType.DOMAIN))
     def __init__(self, user=None, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+        super(ProjectForm, self).__init__(*args, **kwargs)
         if user:
-            self.fields['folder'].queryset = Folder.objects.filter(id__in=RoleAssignment.get_accessible_folders(Folder.get_root_folder(), user, Folder.ContentType.DOMAIN, codename="add_securitymeasure"))
-        else:
-            self.fields['folder'].queryset = Folder.objects.none()
+            self.fields['folder'].queryset = Folder.objects.filter(id__in=RoleAssignment.get_accessible_folders(Folder.get_root_folder(), user, Folder.ContentType.DOMAIN, codename="add_project"))
         self.fields['folder'].widget = SearchableSelect(attrs={'class': 'text-sm rounded',
-                   'searchbar_class': '[&_.search-icon]:text-gray-500 text-sm px-3',
-                   'wrapper_class': 'border border-gray-300 bg-gray-50 text-gray-900 text-sm rounded-b-lg focus:ring-blue-500 focus:border-blue-500 max-h-56 overflow-y-scroll'},
-                   choices=self.fields['folder'].choices)
+                'searchbar_class': '[&_.search-icon]:text-gray-500 text-sm px-3',
+                'wrapper_class': 'border border-gray-300 bg-gray-50 text-gray-900 text-sm rounded-b-lg focus:ring-blue-500 focus:border-blue-500 max-h-56 overflow-y-scroll'},
+                choices=self.fields['folder'].choices)
 
 
     class Meta:
