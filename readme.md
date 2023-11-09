@@ -96,13 +96,13 @@ You can then reach MIRA using your web brower at [http://127.0.0.1:8000/](http:/
 2. Build the image with an appropriate tag (e.g. *mira:[version](mira/VERSION)*), for example:
 
 ```sh
-docker build . -t mira:3.0.2
+docker build . -t mira:$(<mira/VERSION)
 ```
 
 3. Once this is done, you can simply start-up MIRA by running:
 
 ```sh
-docker run --rm -it --env CREATE_SUPERUSER=true -p 8000:8000 -v ./db:/code/db  mira:3.0.2
+docker run --rm -it --env CREATE_SUPERUSER=true -p 8000:8000 -v ./db:/code/db  mira:$(<mira/VERSION)
 ```
 When asked for, enter your email and password for your superuser.
 
@@ -111,7 +111,7 @@ You can then reach MIRA using your web brower at [http://127.0.0.1:8000/](http:/
 For the following executions, simply run:
 
 ```sh
-docker run --rm -p 8000:8000 -v ./db:/code/db  mira:3.0.2
+docker run --rm -p 8000:8000 -v ./db:/code/db  mira:$(<mira/VERSION)
 ```
 
 ⚠️ *WARNING*: If you're using WSL you'll need to activate *Systemd*. Check out this [topic](https://stackoverflow.com/questions/65400999/enable-systemd-in-wsl-2) to do it.
@@ -242,7 +242,7 @@ python manage.py compilemessages -i venv -l fr
 python manage.py runserver
 ```
 
-🆘 *HELP*: If you have the error `"unsupported locale setting"` when loading the `/calendar/` page, run:
+🆘 *HELP*: If you have the error `"unsupported locale setting"` when loading the [calendar](http://127.0.0.1:8000/calendar/) page, run:
 
 ```sh
 export LC_ALL="fr_FR.UTF-8" & export LC_CTYPE="fr_FR.UTF-8" & sudo dpkg-reconfigure locales
