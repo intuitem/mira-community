@@ -889,13 +889,13 @@ class ProjectCreateView(UserPassesTestMixin, CreateView):
         return RoleAssignment.is_access_allowed(user=self.request.user, perm=Permission.objects.get(codename='add_project'), folder=Folder.objects.get(id=self.request.POST['folder']))
 
 
-class ProjectCreateViewModal(UserPassesTestMixin, CreateViewModal):
+class ProjectCreateViewModal(CreateViewModal, UserPassesTestMixin):
     model = Project
     context_object_name = 'project'
     form_class = ProjectForm
 
     def test_func(self):
-        return RoleAssignment.is_access_allowed(user=self.request.user, perm=Permission.objects.get(codename='add_project'), folder=Folder.objects.get(id=self.request.POST['folder']))
+        return RoleAssignment.is_access_allowed(user=self.request.user, perm=Permission.objects.get(codename="add_project"), folder=Folder.objects.get(id=self.request.POST['folder']))
 
 
 class ProjectUpdateView(BaseContextMixin, UserPassesTestMixin, UpdateView):
