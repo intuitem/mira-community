@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-exec mira/scripts/generate_build_file.sh > mira/build.json
